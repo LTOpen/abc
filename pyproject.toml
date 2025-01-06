@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "django>=5.1.4",
+    "easy-thumbnails>=2.10",
     "pillow>=11.1.0",
     "pyecharts>=2.0.7",
 ]

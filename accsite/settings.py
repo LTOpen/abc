@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "accounts",
     "transactions",
     "dashboard",
+    "easy_thumbnails",
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,9 @@ MEDIA_URL = "medias/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+THUMBNAIL_ALIASES = {
+    "": {
+        "avatar": {"size": (256, 256), "crop": True},
+    },
+}

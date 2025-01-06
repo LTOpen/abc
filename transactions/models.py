@@ -27,6 +27,7 @@ class Transaction(models.Model):
     to_account = models.ForeignKey(
         "accounts.Account", on_delete=models.CASCADE, related_name="to_account"
     )
+    date = models.DateField(db_default="2021-12-31")
     created = models.DateTimeField(auto_now=True)
     updated = models.DateTimeField(auto_now_add=True)
     description = models.TextField(blank=True, null=True)
